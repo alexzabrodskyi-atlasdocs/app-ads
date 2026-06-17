@@ -1,7 +1,7 @@
 ﻿# Atlas Documents — app-ads.txt
 # IAB Tech Lab Authorized Sellers for Apps v1.1
 # Reference: https://iabtechlab.com/ads-cert
-# Last updated: 2026-05-19 (Phase 1: Liftoff/Vungle authoritative + OWNERDOMAIN)
+# Last updated: 2026-06-17 (removed ironSource, added Kargo reseller)
 
 
 OWNERDOMAIN=atlasdocs.app
@@ -12,7 +12,6 @@ google.com,pub-3567538177117353,DIRECT,f08c47fec0942fa0
 facebook.com,1128386072070446,DIRECT,c3e20eee3f780d68
 vungle.com,69c207820ae93e4a9f622af0,DIRECT,c107d686becd2d77
 applovin.com,4ba26b45ecb6118154021246999cada6,DIRECT
-ironsrc.com,653739,DIRECT
 
 
 # === Liftoff Monetize (Vungle) — authoritative reseller block ===
@@ -652,3 +651,4 @@ smartadserver.com, 4568, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 5828-OB, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4972, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4578, RESELLER, 060d053dcf45cbf3
+kargo.com,9101,RESELLER,98ccdd9948ed08da
