@@ -9,6 +9,15 @@ File Manager forces `Content-Disposition: attachment`).
 
 ## Source of truth
 
-Lives in the `atlas_pro` repo at `ads/app-ads.txt`. Sync manually on
-update: copy that file into this repo, commit, push. GitHub Pages
-re-deploys in 1-2 minutes.
+This repo. `app-ads.txt` on `main` is what GitHub Pages publishes; it
+re-deploys 1-2 minutes after a push. There is no other copy to sync.
+
+## Editing
+
+- Keep each network's block whole, as the network supplied it. Refresh a
+  block by replacing it with the network's current list. Lines that repeat
+  across blocks are intentional; do not deduplicate them.
+- Every AdMob mediation adapter in `atlas_pro/atlasapp/Podfile` needs its
+  network's DIRECT line here. Adding or removing an adapter means editing
+  this file too.
+- Save as UTF-8 without BOM, LF line endings.
