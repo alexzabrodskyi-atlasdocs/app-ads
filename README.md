@@ -20,4 +20,8 @@ re-deploys 1-2 minutes after a push. There is no other copy to sync.
 - Every AdMob mediation adapter in `atlas_pro/atlasapp/Podfile` needs its
   network's DIRECT line here. Adding or removing an adapter means editing
   this file too.
+- Unity's dashboard can show only the entries missing from this file. Always
+  copy the full list ("Show full list") before replacing the Unity block.
+- A record may be removed only when no current list from a mediated network
+  contains it.
 - Save as UTF-8 without BOM, LF line endings.
