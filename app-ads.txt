@@ -1,18 +1,20 @@
-﻿# Atlas Documents — app-ads.txt
+# Atlas Documents — app-ads.txt
 # IAB Tech Lab Authorized Sellers for Apps v1.1
 # Reference: https://iabtechlab.com/ads-cert
-# Last updated: 2026-06-17 (removed ironSource, added Kargo reseller)
-
+# Last updated: 2026-09-30 (encoding and section comments only; no records changed)
+#
+# Each network's block is kept whole, as the network supplied it. Lines that
+# repeat across blocks are intentional: replacing one block with a fresh list
+# must not silently drop a seller another network still relies on.
 
 OWNERDOMAIN=atlasdocs.app
-
 
 # === DIRECT — publisher account holders ===
 google.com,pub-3567538177117353,DIRECT,f08c47fec0942fa0
 facebook.com,1128386072070446,DIRECT,c3e20eee3f780d68
 vungle.com,69c207820ae93e4a9f622af0,DIRECT,c107d686becd2d77
 applovin.com,4ba26b45ecb6118154021246999cada6,DIRECT
-
+# unity.com DIRECT is inside the Unity Ads block below.
 
 # === Liftoff Monetize (Vungle) — authoritative reseller block ===
 # Source: https://publisher.vungle.com/vungleAdsTxt (2026-05-19)
@@ -377,9 +379,9 @@ zmaticoo.com,5135224,RESELLER
 zmaticoo.com,5135302,RESELLER
 zoomd.com,88478941,RESELLER
 
-
 # === Carry-over resellers from previous app-ads.txt (other partner networks) ===
-# To be reorganized into AdMob / AppLovin / Meta / ironSource blocks in Phase 2.
+# Not attributed to a single network. Remove a line only once the network
+# that needs it confirms it is obsolete.
 adyoulike.com,2d578cf695c89ec2ba707280319d2020,RESELLER
 bidease.com,bidease_seller_26,RESELLER
 contextweb.com,562615,RESELLER,89ff185a4c4e857c
@@ -493,8 +495,8 @@ rubiconproject.com,22412,RESELLER,0bfd66d529a55807
 pubmatic.com,160318,RESELLER,5d62403b186f2ace
 rubiconproject.com,28169,RESELLER,0bfd66d529a55807
 
-
-#unity
+# === Unity Ads — reseller block ===
+# Added 2026-06-07, kept verbatim.
 algorix.co, 54616, RESELLER, 5b394c12fea27a1d
 google.com, pub-2923085774557613, RESELLER, f08c47fec0942fa0
 google.com, pub-5060663379040713, RESELLER, f08c47fec0942fa0
@@ -651,4 +653,7 @@ smartadserver.com, 4568, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 5828-OB, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4972, RESELLER, 060d053dcf45cbf3
 smartadserver.com, 4578, RESELLER, 060d053dcf45cbf3
+
+# === Kargo ===
+# Added 2026-06-17.
 kargo.com,9101,RESELLER,98ccdd9948ed08da
